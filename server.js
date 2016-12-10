@@ -3,8 +3,8 @@ var path = require('path');
 var app = express();
 var game = require('./game');
 
-// Turn down the logging activity
-app.use(express.logger('dev'));
+// // Turn down the logging activity
+// app.use(express.logger('dev'));
 
 // Serve static html, js, css, and image files from the 'public' directory
 app.use(express.static(path.join(__dirname,'public')));
@@ -16,8 +16,8 @@ var server = require('http').createServer(app).listen(3000);
 // Create a Socket.IO server and attach it to the http server
 var io = require('socket.io').listen(server);
 
-// Reduce the logging output of Socket.IO
-io.set('log level',1);
+// // Reduce the logging output of Socket.IO
+// io.set('log level',1);
 
 // Listen for Socket.IO Connections. Once connected, start the game logic.
 io.sockets.on('connection', function (socket) {

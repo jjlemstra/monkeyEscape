@@ -154,7 +154,7 @@ jQuery(function($){
     Player : {
       setNum: 0,
       onPlayerStartClick: function() {
-        $('#joinGame').html('Try again');
+        // $('#joinGame').html('Try again');
         var data = {
           gameId : $('#inputGameId').val(),
           playerName : $('#inputPlayerName').val() || 'Anonimous'

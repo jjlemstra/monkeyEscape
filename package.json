@@ -3,12 +3,8 @@
   "description": "Phonetroller Game",
   "version": "0.0.0",
   "private": true,
-  "engines": {
-    "node": "4.1.1",
-    "npm": "2.14.4"
-  },
   "dependencies": {
     "express": "3.19.2",
-    "socket.io": "0.9.17"
+    "socket.io": "1.5.0"
   }
 }

@@ -8,12 +8,12 @@ function detectDevice() {
   if(  /Android|webOS|iPhone|iPod|BlackBerry|iPad/i.test(navigator.userAgent) ){
     $('#gameLobbyMobile').show();
   }else{
-    $('#gameArea').show();
-    startGame();
+    // $('#gameArea').show();
+    // startGame();
     // Testing game on pc: ^-- uncomment and comment the next three lines
-    // App.Host.createGame();
-    // $('#gameLobbyDesktop').show();
-    // $('.background').show();
+    App.Host.createGame();
+    $('#gameLobbyDesktop').show();
+    $('.background').show();
   }
 }
 

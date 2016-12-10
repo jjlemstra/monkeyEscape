@@ -36,7 +36,7 @@ jQuery(function($){
       IO.socket.on('buttonClicked', IO.buttonClicked );
     },
     onConnected : function() {
-      App.mySocketId = IO.socket.socket.sessionid;
+      App.mySocketId = IO.socket.sessionid;
     },
     onNewGameCreated : function(data) {
       App.Host.gameInit(data);

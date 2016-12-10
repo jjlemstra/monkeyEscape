@@ -36,7 +36,7 @@ jQuery(function($){
       IO.socket.on('buttonClicked', IO.buttonClicked );
     },
     onConnected : function() {
-      App.mySocketId = IO.socket.socket.sessionid;
+      App.mySocketId = IO.socket.sessionid;
       console.log(IO.socket.socket);
       consoel.log(IO.socket);
     },

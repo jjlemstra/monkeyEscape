@@ -165,7 +165,7 @@ jQuery(function($){
       },
 
       updateWaitingScreen : function(data) {
-        if(IO.socket.socket.sessionid === data.mySocketId){
+        if(IO.socket.sessionid === data.mySocketId){
           App.myRole = 'Player';
           App.gameId = data.gameId;
           App.setNum = data.pNumber;

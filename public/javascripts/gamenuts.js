@@ -36,7 +36,7 @@ jQuery(function($){
       IO.socket.on('buttonClicked', IO.buttonClicked );
     },
     onConnected : function() {
-      App.mySocketId = IO.socket.sessionid;
+      App.mySocketId = IO.socket.socket.sessionid;
     },
     onNewGameCreated : function(data) {
       App.Host.gameInit(data);
@@ -165,7 +165,7 @@ jQuery(function($){
       },
 
       updateWaitingScreen : function(data) {
-        if(IO.socket.sessionid === data.mySocketId){
+        if(IO.socket.socket.sessionid === data.mySocketId){
           App.myRole = 'Player';
           App.gameId = data.gameId;
           App.setNum = data.pNumber;
